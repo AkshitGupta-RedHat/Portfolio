@@ -14,8 +14,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="swiper.min.css"/>
-<link rel="stylesheet" href="main.css"/>
+    <link rel="stylesheet" href="swiper.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="main.css" />
 
 
 
@@ -24,10 +25,13 @@
 </head>
 
 <body>
-    <nav class="nav-wrapper grey darken-3">
+    <nav class="nav-wrapper transparent">
         <div class="container">
-            <div class="brand-logo">Akshit</div>
-            <ul class="right">
+            <a href="#" class="brand-logo">Akshit</a>
+            <a href="#" class="sidenav-trigger" data-target="mobile-links">
+                <i class="material-icons">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
                 <li><a href="#">About</a></li>
                 <li><a href="#">Projects</a></li>
                 <li><a href="#">Exoerience</a></li>
@@ -36,14 +40,25 @@
             </ul>
         </div>
     </nav>
-    <div class="container section">
+
+    <ul class="sidenav" id="mobile-links">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Exoerience</a></li>
+        <li><a href="#">Education</a></li>
+        <li><a href="#">Contact Us</a></li>
+    </ul>
+
+    <div class="container section head">
         <div class="row">
             <div class="col s12 l4">
                 <h1>Hi</h1>
                 <h1>I'm Akshit</h1>
                 <h1>Full Stack Developer</h1>
             </div>
-            <div class="col s12 l4 offset-l3">
+            <div class="col s12 l4 offset-l3" data-aos="fade-up" data-aos-offset="200" data-aos-delay="10"
+                data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="true"
+                data-aos-anchor-placement="top-center">
                 <img src="/img/mr.png" class="responsive-img">
             </div>
         </div>
@@ -78,66 +93,172 @@
         </div>
 
     </div>
-    <div class="container education section">
-        <h3>Post Graduate</h3>
-        <p>Information Technology and Business Analysis</p>
-        <p>CONESTOGA COLLEGE</p>
-        <p>January 2020 To May 2021</p>
-        <p>Courcework:</p>
-        <span>Office 365, U/UX development, Project ManagementF</span>
 
 
-        <h3>Bachelor of Engineering</h3>
-        <p>Computer Science and Engineering GPA 8.14/10 </p>
-        <p>CCET, Punjab University</p>
-        <p>June 2014 To May 2018</p>
-        <p>Courcework:</p>
-        <span>Operating System, Advance Algorithms, Theory of computation and Automation, Database.</span>
+
+
+
+
+    <div class="container swiper-container-cube" style="padding-bottom: 20%;">
+        <div class="swiper-wrapper" style="max-height:fit-content">
+
+            <div class="swiper-slide">
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/edu/pg.png" class="responsive-img image">
+                    </div>
+                    <div class="card-content s12">
+
+                        <h3>Post Graduate</h3>
+                        <p>Information Technology and Business Analysis</p>
+                        <p>CONESTOGA COLLEGE</p>
+                        <p>January 2020 To May 2021</p>
+                        <p>Courcework:</p>
+                        <span>Office 365, U/UX development, Project ManagementF</span>
+
+                    </div>
+                    <div class="card-action">
+                        <a href="#">Tour of Campus</a>
+                        <a href="#">Know More</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/edu/be.png" class="responsive-img image">
+                    </div>
+                    <div class="card-content s12">
+
+                        <h3>Bachelor of Engineering</h3>
+                        <p>Computer Science and Engineering GPA 8.14/10 </p>
+                        <p>CCET, Punjab University</p>
+                        <p>June 2014 To May 2018</p>
+                        <p>Courcework:</p>
+                        <span>Operating System, Advance Algorithms, Theory of computation and
+                            Automation,
+                            Database.</span>
+
+                    </div>
+                    <div class="card-action">
+                        <a href="#">Tour of Campus</a>
+                        <a href="#">Know More</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="swiper-pagination" style="padding-bottom: 15%;"></div>
     </div>
 
+
+
+
     <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide" style="background-image:url(./img/m1.jpg)"></div>
-          <div class="swiper-slide" style="background-image:url(./img/m2.jpg)"></div>
-          <div class="swiper-slide" style="background-image:url(./img/m3.jpg)"></div>
-          <div class="swiper-slide" style="background-image:url(./img/m4.jpg)"></div>
-          <div class="swiper-slide" style="background-image:url(./img/m5.jpg)"></div>
-          <div class="swiper-slide" style="background-image:url(./img/m6.jpg)"></div>
+        <div class="swiper-wrapper" style="width:350px;height:350px">
+            <div class="swiper-slide" class="responsive-img"><img src="img/m1.jpg" class="responsive-img"></div>
+            <div class="swiper-slide" style="width:650px;height:350px;background-image:url(./img/project/and.jpg)">
+            </div>
+            <div class="swiper-slide" style="background-image:url(./img/m4.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(./img/m5.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(./img/m6.jpg)"></div>
 
         </div>
         <!-- Add Pagination -->
         <div class="swiper-pagination"></div>
-      </div>
-    
-      <!-- Swiper JS -->
-      <script src="../package/js/swiper.min.js"></script>
-    
-      <!-- Initialize Swiper -->
-      <script src="swiper.min.js"></script>
-      <script>
+    </div>
+    <footer class="page-footer grey darken-3">
+        <p class="center">&copy;Akshit's Portfolio</p>
+    </footer>
+
+
+
+    <!-- Swiper JS -->
+    <script src="../package/js/swiper.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script src="swiper.min.js"></script>
+    <script>
         var swiper = new Swiper('.swiper-container', {
-          effect: 'coverflow',
-          grabCursor: true,
-          centeredSlides: true,
-          slidesPerView: 'auto',
-          coverflowEffect: {
-            rotate: 50,
-            stretch: 0,
-            depth: 500,
-            modifier: 5,
-            slideShadows : true,
-          },
-          pagination: {
-            el: '.swiper-pagination',
-          },
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 500,
+                modifier: 5,
+                slideShadows: true,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true
+            },
         });
-      </script>
 
-
-    <footer class="page-footer grey darken-3"><p class="center">&copy;Akshit's Portfolio</p></footer>
+        var swipecube = new Swiper('.swiper-container-cube', {
+            effect: 'cube',
+            grabCursor: true,
+            autoplay: true,
+            speed: 1000,
+            loop: true,
+            cubeEffect: {
+                shadow: true,
+                slideShadows: true,
+                shadowOffset: 20,
+                shadowScale: 0.94,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        });
+    </script>
     <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+            var parallaxSlider;
+            var paraSlderOptions = {
+                speed: 1000,
+                autoplay: false,
+                parallax: true,
+                loop: true,
+                grabCursor: true,
+                centeredSlides: true,
+                pagination: {
+                    el: '.swiper-pagination .parallax-ctrl',
+                    clickable: true
+                },
+                on: {
+                    init: function () {
+                        let swiper = this;
+                        for (let i = 0; i < swiper.slides.length; i++) {
+                            $(swiper.slides[i]).find('.swiper-slide').after({
+                                'data-swiper-parallax': 0.75 * swiper.width,
+                                'data-swiper-parallax-opacity': .5
+                            })
+                        }
+                    }
+                }
+
+            };
+            parallaxslide = new Swiper('.parallax-slider', paraSlderOptions)
+            $('.swiper-slide').parallaxslide();
+        });
+    </script>
 </body>
 
 </html>
