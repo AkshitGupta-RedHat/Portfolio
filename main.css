@@ -108,7 +108,7 @@ color: white;
 
 .contact{
   background-color: black;
-  clip-path:polygon(0% 0%,90% 10%, 100% 0%,100% 100%,53% 100%, 50% 99%,47% 100%, 0% 100%) ;
+  clip-path:polygon(0% 0%,90% 10%, 100% 0%,100% 80%,90% 100%, 0% 100%) ;
 }
 
   .btn-style{
@@ -189,10 +189,7 @@ body {
   }
   
 
-.swiper-pagination .parallax-ctrl{
-  position: relative;
-  
-}
+
 
 .swiper-slide {
   font-size: 18px;
@@ -201,16 +198,7 @@ body {
   box-sizing: border-box;
   padding: 40px 60px;
 }
-.parallax-bg {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 130%;
-  height: 100%;
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-position: center;
-}
+
 .swiper-slide .title {
   font-size: 41px;
   font-weight: 300;
