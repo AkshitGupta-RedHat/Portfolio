@@ -160,10 +160,10 @@ padding-bottom: 30px;
 }
 .work{
   text-align: center;
-  background: linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8)), url(img/ba2.gif);
-  background-size: cover;
+  background: linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8)), url(img/background/space.gif);
+background-size: cover;
   color: var(--pure);
-  clip-path: polygon(0 0, 80% 10%, 100% 0, 100% 100%, 10% 90%, 0 100%);
+  clip-path: polygon(0 0, 80% 8%, 100% 0, 100% 100%, 10% 97%, 0 100%);
 }
 
 .bottom{
@@ -183,23 +183,26 @@ body {
   
   }
 
-  .head{
+  .head {
     background: #000;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 90%, 0 100%);
+   
   }
   
-
+  .front-page{
+    background: rgb(0, 0, 0);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 90%, 0 100%);
+  }
 
 
 .swiper-slide {
   font-size: 18px;
   color:#000;
-  -webkit-box-sizing: border-box;
+
   box-sizing: border-box;
   padding: 40px 60px;
 }
 
-.swiper-slide .title {
+.swiper-slide .title{
   font-size: 41px;
   font-weight: 300;
 }
