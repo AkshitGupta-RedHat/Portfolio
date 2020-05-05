@@ -14,6 +14,7 @@ transition: all .3s ease;
 
 }
 .button{
+
   padding: .8rem 3rem;
   font-size: 1rem;
   font-weight: 600;
@@ -26,6 +27,7 @@ transition: all .3s ease;
   -o-transition: all .3s ease;
 }
 .primary-btn{
+  
   border: 2px solid;
   border-color: var(--primary);
   color: var(--primary);
@@ -53,6 +55,7 @@ transition: all .3s ease;
 }
 .heading{
   font-size: 3rem;
+  font-weight: bolder;
 }
 .section-heading{
   color:var(--secondary);
@@ -129,19 +132,22 @@ div.services-section .card h4{
   font-weight: bold;
 }
 
-div.services-section .card p{
+div.services-section .z-depth-3 p{
 font-family: 'Poppins',sans-serif;
-color:var(--ternary);
+color:rgb(26, 22, 22);
 padding-top: 0;
 font-weight: 1000;
 }
-
-div.services-section .card:hover{
-  background-color: #000;
+div.services-section .z-depth-3:hover p{
+  color:white;
+  }
+div.services-section .z-depth-3:hover{
+  background: var(--dark);
 }
 
-div.services-section .card:hover h4{
+div.services-section .z-depth-3:hover h4{
   color:var(--pure);
+ 
 }
 .section{
 padding-top: 30px;
