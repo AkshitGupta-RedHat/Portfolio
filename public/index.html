@@ -11,13 +11,11 @@
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="swiper.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="main.css" />
-
 
 
     <title>Akshit's Portfolio</title>
@@ -28,7 +26,7 @@
     <div class="head">
 
 
-        <nav class="nav-wrapper transparent">
+        <nav class="nav-wrapper black">
             <div class="container">
                 <a href="#" class="brand-logo" data-aos="fade-right"><img src="img/logo/logo black.PNG"></a>
                 <a href="#" class="sidenav-trigger" data-target="mobile-links">
@@ -56,12 +54,12 @@
     </ul>
 
 
-    <section class="section front-page">
-        <div class="row">
+    <div class="front-page">
+        <div class="row padding-mobile">
             <div class="col s12 l4" data-aos="fade-right" style="padding-left: 5%;">
                 <img src="/img/me/coat black background.png" class="padding responsive-img">
             </div>
-            <div class="col s12 l6 offset-l1" data-aos="fade-left" data-aos-offset="200" data-aos-delay="10"
+            <div class="col s12 l6 offset-l1" data-aos="fade-left"  data-aos-delay="10"
                 data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="true"
                 data-aos-anchor-placement="top-center">
                 <h6 class="primary-text" style="margin-bottom:5%;font-weight: bolder;">Akshit Gupta</h6>
@@ -73,7 +71,7 @@
             </div>
 
         </div>
-    </section>
+    </div>
 
 
     <div class="services-section container scrollspy" style="padding-bottom: 10%;" id="servies">
@@ -89,7 +87,7 @@
 
                 <div class="z-depth-3">
                     <h4 class="center" style="padding-top: 20%;">Front End Development</h4>
-                    <p style="padding-bottom:10%;padding-left:10%;padding-right:10%;">
+                    <p class="service-card-adjust service-offset">
                         There are mnany powerfull
                         frameworks which are available as an open source to bulid custom UI/UX. Checkout my project
                         section for live example.
@@ -105,7 +103,7 @@
 
                 <div class="z-depth-3">
                     <h4 class="center" style="padding-top: 20%;">Back End Development</h4>
-                    <p style="padding-bottom:10%;padding-left:10%;padding-right:10%;">
+                    <p class="service-card-adjust service-offset">
                         Everything can not be stored on the client's machine as there are features which are to be
                         used at the server side to monitor and control the clients activities
                     </p>
@@ -167,7 +165,8 @@
 
                 <div class="z-depth-3">
                     <h4 class="center" style="padding-top: 20%;">Digital Media Marketing</h4>
-                    <p style="padding-bottom:10%;padding-left:10%;padding-right:10%;">Since the world is now available
+                    
+                    <p class="service-card-adjust service-offset2">Since the world is now available
                         more online than face to face marketing strategies are also changing to reach the target
                         customers.
                     </p>
@@ -177,7 +176,7 @@
         </div>
     </div>
 
-    <div class="pro scrollspy" style="padding-bottom: 10%;" id="proj">
+    <div class="pro scrollspy" style="padding-bottom: 10%;background-color:" id="proj">
         <div class="container">
             <div class="center-align heading" data-aos="fade-right"><span class="primary-text">Some</span> Projects
             </div>
@@ -185,16 +184,16 @@
                 problems of the masses
             </div>
         </div>
-        <div class="swiper-container container" data-aos="fade-right" style="width: 500px; padding-bottom: 3%;">
+        <div class="swiper-container container" data-aos="fade-right" style=" padding-bottom: 3%;">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="row white ">
+                <div class="swiper-slide" >
+                    <div class="row center width-control">
                         <div class="col s12 l12 projects">
-                            <div class="project-slider z-depth-3">
+                            <div class="project-slider z-depth-3 center">
                                 <img src="./img/project/rea.gif" class="responsive-img center-align">
 
                                 <div class="center-align">
-                                    <h4 class="project-title" style="font-weight: bolder;font-size: 2rem;">Project
+                                    <h4 class="project-title" style="font-weight: bolder;font-size: 1.5rem;">Project
                                         Managemet WebApp</h4>
                                 </div>
                                 <div class="left-align"
@@ -206,7 +205,33 @@
                                     <div>• Firestore No-SQL cloud database to store the user data</div>
                                 </div>
                                 <div class="center padding-bottom">
-                                    <a href="" class="icon-style"><i class="fab fa-github"></i> Source Code
+                                    <a href="https://github.com/AkshitGupta-RedHat/MarioPlan" style="font-size:.9rem" class="icon-style"><i class="fab fa-github"></i>
+                                        Source Code
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide" >
+                    <div class="row center width-control">
+                        <div class="col s12 l12 projects">
+                            <div class="project-slider z-depth-3 center">
+                                <img src="./img/project/sortgif.gif" class="responsive-img center-align">
+
+                                <div class="center-align">
+                                    <h4 class="project-title" style="font-weight: bolder;font-size: 1.5rem;">Visual Sorter</h4>
+                                </div>
+                                <div class="left-align"
+                                    style="padding-left: 5%;padding-bottom: 5%;font-weight: bolder; font-size: 1rem;">
+                                    <div>• Graphically displays how the sorting algorithms work
+                                    </div>
+                                    <div>• Very user friendly UI</div>
+                                    <div>• Can control the speed and size of the array as per the needs</div>
+                                </div>
+                                <div class="center padding-bottom">
+                                    <a href="https://github.com/AkshitGupta-RedHat/Visual-Sorter" style="font-size:.9rem" class="icon-style"><i class="fab fa-github"></i>
+                                        Source Code
                                     </a>
                                 </div>
                             </div>
@@ -214,22 +239,24 @@
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="row white ">
+                    <div class="row white width-control">
                         <div class="col s12 l12 projects">
                             <div class="project-slider z-depth-3">
                                 <img src="./img/project/and.gif" class="responsive-img center-align">
 
                                 <div class="center-align">
-                                    <h4 class="project-title" style="font-weight: bolder;">Text Recognizer App</h4>
+                                    <h4 class="project-title" style="font-weight: bolder;font-size: 1.5rem;">Text
+                                        Recognizer App</h4>
                                 </div>
                                 <div class="left-align"
-                                    style="padding-left: 5%;padding-bottom: 5%;font-weight: bolder; font-size: medium;">
+                                    style="padding-left: 5%;padding-bottom: 5%;font-weight: bolder; font-size: 1rem;">
                                     <div>• Recognises any digital or hand written text</div>
                                     <div>• Can edit blogs or any data after scanning the text you like</div>
                                     <div>• Require camera and file storage permission</div>
                                 </div>
                                 <div class="center padding-bottom">
-                                    <a href="" class="icon-style"><i class="fab fa-github"></i> Source Code
+                                    <a href="https://github.com/AkshitGupta-RedHat/Digital-Text-Recognition" style="font-size:.9rem;" class="icon-style"><i class="fab fa-github"></i>
+                                        Source Code
                                     </a>
                                 </div>
                             </div>
@@ -237,24 +264,26 @@
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="row white ">
+                    <div class="row white width-control">
                         <div class="col s12 l12 projects">
                             <div class="project-slider z-depth-3">
                                 <img src="./img/project/ang.gif" class="responsive-img center-align">
 
                                 <div class="center-align">
-                                    <h4 class="project-title" style="font-weight: bolder;">Simplified HTML Reporter
+                                    <h4 class="project-title" style="font-weight: bolder;font-size: 1.5rem;">Simplified
+                                        HTML Reporter
                                         Library
                                     </h4>
                                 </div>
                                 <div class="left-align"
-                                    style="padding-left: 5%;padding-bottom: 5%;font-weight: bolder; font-size: medium;">
+                                    style="padding-left: 5%;padding-bottom: 5%;font-weight: bolder; font-size: 1rem;">
                                     <div>• Dispalys automated test reports of various browsers in different tabs</div>
                                     <div>• Shows formatted HTML reports in beautiful sturcture</div>
                                     <div>• Light weght, simplified and faster than other reporters</div>
                                 </div>
                                 <div class="center padding-bottom">
-                                    <a href="" class="icon-style"><i class="fab fa-github"></i> Source Code
+                                    <a href="https://github.com/AkshitGupta-RedHat/Pretty-HTML-Reporter" style="font-size: .9rem;" class="icon-style"><i
+                                            class="fab fa-github"></i> Source Code
                                     </a>
                                 </div>
                             </div>
@@ -262,22 +291,24 @@
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="row white ">
+                    <div class="row white width-control">
                         <div class="col s12 l12 projects">
                             <div class="project-slider z-depth-3">
-                                <img src="./img/project/htm.gif" class="responsive-img center-align">
+                                <img src="./img/project/portfolio.gif" class="responsive-img center-align">
 
                                 <div class="center-align">
-                                    <h4 class="project-title" style="font-weight: bolder;">My Portfolio</h4>
+                                    <h4 class="project-title" style="font-weight: bolder;font-size: 1.5rem;">My
+                                        Portfolio</h4>
                                 </div>
                                 <div class="left-align"
-                                    style="padding-left: 5%;padding-bottom: 5%;font-weight: bolder; font-size: medium;">
+                                    style="padding-left: 5%;padding-bottom: 5%;font-weight: bolder; font-size: 1rem;">
                                     <div>• Creative and fuly responsive website</div>
                                     <div>• Materialized design</div>
                                     <div>• Clean markups and code</div>
                                 </div>
                                 <div class="center padding-bottom">
-                                    <a href="" class="icon-style"><i class="fab fa-github"></i> Source Code
+                                    <a href="" style="font-size: .9rem;" class="icon-style"><i
+                                            class="fab fa-github"></i> Source Code
                                     </a>
                                 </div>
                             </div>
@@ -285,24 +316,26 @@
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="row white ">
+                    <div class="row white width-control">
                         <div class="col s12 l12 projects">
                             <div class="project-slider z-depth-3">
                                 <img src="./img/project/java.gif" class="responsive-img center-align"
                                     style="width: 600px;">
 
                                 <div class="center-align">
-                                    <h4 class="project-title" style="font-weight: bolder;">Huffman Encoder & Decoder
+                                    <h4 class="project-title" style="font-weight: bolder; font-size: 1.5rem;">Huffman
+                                        Encoder & Decoder
                                     </h4>
                                 </div>
                                 <div class="left-align"
-                                    style="padding-left: 5%;padding-bottom: 5%;font-weight: bolder; font-size: medium;">
+                                    style="padding-left: 5%;padding-bottom: 5%;font-weight: bolder; font-size: 1rem;">
                                     <div>• Data compression algorithm to upload data on cloud.</div>
-                                    <div>• Independent of fdata type</div>
+                                    <div>• Independent of data type</div>
                                     <div>• Can be used for any data type like audio, image, spreadsheet</div>
                                 </div>
                                 <div class="center padding-bottom">
-                                    <a href="" class="icon-style"><i class="fab fa-github"></i> Source Code
+                                    <a href="https://github.com/AkshitGupta-RedHat/Huffman-Encoder" class="icon-style" style="font-size: .9rem;"><i
+                                            class="fab fa-github"></i> Source Code
                                     </a>
                                 </div>
                             </div>
@@ -311,81 +344,47 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>  
 
     <!-- Scroll bar is appering due to this blok -->
 
-    <div class="swiper-container-parallax work scrollspy" id="work">
-        <h2 class="poppins white-text" data-aos="fade-left"><span class="primary-text">WORK</span> EXPERIENCE</h2>
-        <div class="swiper-wrapper container">
-
-            <div class="swiper-slide" data-aos="fade-right" style="padding-bottom: 100%;">
-                <div class="title left-align red-text" data-swiper-parallax="-300">Software Developer</div>
-                <div class="subtitle left-align white-text" data-swiper-parallax="-150" style="font-weight: bolder;">
+    <div class="work scrollspy" id="work">
+   
+        <h2 class="poppins white-text" ><span class="primary-text">WORK</span> EXPERIENCE</h2>
+        <div class="container">
+    
+            <div class=""  style="padding-bottom: 100%;">
+                <div class="title box-ani white-text left-align" style="font-size:2rem;" >I am a<span class="change red-text"></span></div>
+                <div class="subtitle left-align white-text box-ani" style="font-weight: bolder;">
                     QuarkXPress</div>
-                <div class="subtitle left-align white-text" data-swiper-parallax="-200" style="font-weight: bolder;">
-                    June 2018 to January
-                    2018
+                <div class="subtitle left-align white-text box-ani" style="font-weight: bolder;"><span class="date-change"></span>
+                    
                 </div>
-                <div class="parallax-slide left-align white-text" style="font-size:.8rem;" data-swiper-parallax="-100">
-                    <p data-swiper-parallax="-100">Strong team player and expert in bringing clarity and
-                        ease of use
-                        to complex systems.</p>
-                    <p data-swiper-parallax="-100">Singly engineered entire up-gradation of financial
-                        framework for
-                        Zurich Kantonal Bank.</p>
-                    <p data-swiper-parallax="-100">Familiarized with all phases of project lifecycle
-                        starting from
-                        requirement gathering, design up to coding, testing and maintenance.</p>
-                    <p data-swiper-parallax="-100">Handled multiple service-based projects & outstanding
-                        issues and
-                        ensuring the quality & timelines of the deliverable as well as extending
-                        post-implementation
-                        support to team members by identifying and resolving defects, inconsistencies
-                        and errors.</p>
-                    <p data-swiper-parallax="-100">Singly created entire UI in ReactJS and integrated with
-                        backend
-                        using RESTful Services.</p>
-                    <p data-swiper-parallax="-100">Participated in Scrum meetings and other POCs to give
-                        status of
-                        the current development and features deliverable in current sprint</p>
+                <div class="parallax-slide left-align white-text box-ani" style="font-size:.8rem;">
+                    <p class="content-change1"></p>
+                    <p class="content-change2"></p>
+                    <p class="content-change3"></p>
+                     <p class="content-change4"></p>
+                    <p class="content-change5"></p>
+                    <p class="content-change4"></p>
                 </div>
             </div>
-
-            <div class="swiper-slide">
-                <div class="title left-align red-text" data-swiper-parallax="-300" data-swiper-parallax-opacity="0">
-                    Automation Test Developer (Intern)</div>
-                <div class="subtitle left-align white-text" data-swiper-parallax="-150" style="font-weight: bolder;">
-                    QuarkXPress</div>
-                <div class="subtitle left-align white-text" data-swiper-parallax="-200" style="font-weight: bolder;">
-                    January 2018 to June
-                    2018
-                </div>
-                <div class=" parallax-slide left-align white-text" style="font-size:.8rem;" data-swiper-parallax="-100">
-                    <P data-swiper-parallax="-100">Automated WebApps, WebEditor, Build Process which are
-                        based on
-                        Angular 5, ExtJS, Ant Build
-                    </p>
-                    <P data-swiper-parallax="-100">Experience in Selenium Web driver, Protractor, Karma and
-                        developed Unit, Integration and End-to-End test cases.</p>
-                    <P data-swiper-parallax="-100">Ensure tasks performed are consistent with established
-                        company
-                        priorities. Reports accurate in various formats like HTML, JSON, CSV etc. and timely
-                        project/task status to the management.
-                    </P>
-                </div>
-            </div>
+    
+  
         </div>
     </div>
 
 
 
-    <div class="container swiper-container-cube scrollspy" style="padding-bottom: 30%;" id="edu">
+
+
+
+   <div class="container swiper-container-cube scrollspy" style="padding-bottom: 30%;" id="edu">
         <div class="center-align heading" data-aos="fade-right"><span class="primary-text">EDUCATION</span> BACKGROUND
         </div>
         <div class="center-align secondary-text" data-aos="fade-left">I have studied in one the prestigious Colleges and
             Universities</div>
-        <div class="swiper-wrapper row white" style="max-height:fit-content">
+        <div class="swiper-wrapper row transparent" style="max-height:fit-content">
 
             <div class="swiper-slide" data-aos="fade-right">
 
@@ -398,7 +397,7 @@
                             <div>CONESTOGA COLLEGE</div>
                             <div>January 2020 To May 2021</div>
                             <div style="padding-top: 8%">Coursework:</div>
-                            <div style="padding-bottom: 5%;">Office 365, U/UX development, Project Management</div>
+                            <div style="padding-bottom: 5%;">Office 365, UI/UX development, Project Management</div>
                         </div>
                         <div class="card-action s12 center" style="padding-bottom: 3%;">
                             <a href="https://www.conestogac.on.ca/campuses/kitchener-doon/index"
@@ -411,7 +410,7 @@
                 </div>
             </div>
             <div class="swiper-slide">
-                <div class="row white ">
+                <div class="row black ">
                     <div class="col s12 l12 edu">
                         <div class="project-slider z-depth-3">
                             <img src="img/edu/be.png" class="responsive-img image">
@@ -508,7 +507,7 @@
             </div>
         </div>
 
-    </div>
+    </div> 
 
 
 
@@ -559,7 +558,7 @@
                 shadowScale: 0.94,
             },
             pagination: {
-                el: '.swiper-pagination',
+           
             },
         });
     </script>
@@ -568,7 +567,7 @@
     <script>
         AOS.init({
             // Global settings:
-            disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+            disable: 'mobile', // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
             startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
             initClassName: 'aos-init', // class applied after initialization
             animatedClassName: 'aos-animate', // class applied on animation
@@ -594,18 +593,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
-        var swiperparallax = new Swiper('.swiper-container-parallax', {
-            speed: 1000,
-            autoplay: true,
-            parallax: true,
-            loop: true,
-            scrollbar: {
-                el: '.swiper-scrollbar',
-                draggable: false,
-                hide: true,
-            },
-
-        });
         $('.scrollspy').scrollSpy();
         $('.sidenav').sidenav();
     </script>
